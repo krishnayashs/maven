@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTest" parallel="tests">
+  <test thread-count="5" name="chrome">
+  <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="ngBrowser.chrome"/>   
+    </classes>
+    </test>
+      <test thread-count="5" name="firefox">
+      <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="ngBrowser.chrome"/>
+    </classes>
+  </test> <!-- chrome -->
+</suite> <!-- SmokeTest -->
